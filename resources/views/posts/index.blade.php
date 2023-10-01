@@ -19,6 +19,8 @@
             </div>
             @endforeach
         </div>
+        <div class='Pafinate'>{{$posts->links()}}</div>
+        
         
     </body>
 </html>
