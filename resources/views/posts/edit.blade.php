@@ -11,7 +11,7 @@
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
-    <from action="/posts/{{ $post->id }}" method="POST">
+    <form action="/posts/{{ $post->id }}" method="POST">
         @csrf
         @method('PUT')
         <div class="title">
@@ -25,7 +25,7 @@
             <p clss="body__error" style="color:red">{{ $errors->first('post.body') }}</P>
         </div>
         <input type="submit" value="update">
-    </from> 
+    </form> 
          <div class='footer'>
             <a href="/posts/{{ $post->id }}">戻る</a>
         </div>
